@@ -45,6 +45,16 @@
 		table-layout: fixed;
 	}
 
+  .main {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .two-images {
+    vertical-align: top;
+  }
+
 </style>
 </head>
 <body>
@@ -73,20 +83,18 @@
 
           <table width="100%">
             <tr>
-              <td class="two-columns">
-
-                <table class="column">
+              <td class="two-images">
+                <!-- finally found a way to display both images on the same row, as obvious as it is now that I look at the code. Must make one table then tr double td that shit 
+                
+                
+                well, this solution is bad actually - the image is not responsive -->
+                <table>
                   <tr>
-                    <td>
-                      <a href="#"><img src="img/09_girlwithjuman.jpg" alt="pretty girl" width= "195"></a>
+                    <td style="border: 1px solid red;">
+                      <a href="#"><img src="img/09_girlwithjuman.jpg" alt="pretty girl" width= "100%"></a>
                     </td>
-                  </tr>
-                </table>
-
-                <table class="column">
-                  <tr>
-                    <td>
-                      <a href="#"><img src="img/02_view.jpg" alt="big pool" width="400"></a>
+                    <td style="border: 1px solid red;">
+                      <a href="#"><img src="img/02_view.jpg" alt="big pool" width="100%"></a>
                     </td>
                   </tr>
                 </table>
@@ -127,7 +135,46 @@
 <!-- OFFERS -->
 			<tr>
         <td>
-          
+
+          <table width="100%">
+            <tr>
+              <td style="border: 1px solid green; text-align: left;">
+                <h1>Exclusive Juman two offers*</h1>
+              
+            
+
+                <table width="100%">
+                  <tr>
+                    <td style="border: 1px solid cyan; text-align: left; background-color: #02043F; color: #ffffff; font-family: geosans-serifrgia;">
+                      <p>&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;1 & 2 bedroom apartments ready in 2022
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%">
+                  <tr>
+                    <td style="border: 1px solid yellow; text-align: left; background-color: #02043F; color: #ffffff; font-family: sans-serif;">
+                      <p>&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;Exclusive furniture, car and boat financing*
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%">
+                  <tr>
+                    <td style="border: 1px solid pink; text-align: left; background-color: #02043F; color: #ffffff; font-family: sans-serif;">
+                      <p>&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;&#8202;Invest from OMR 5,725*
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+            
+              <p style="font-family: sans-serif;"><i>*Terms and conditions apply</i></p>
+            </td> 
+          </tr>
+        </table>
+
         </td>
       </tr>
 <!-- TWO IMAGES -->
